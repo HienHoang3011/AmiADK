@@ -1,0 +1,19 @@
+general:
+  project_name: "ADKAmi"
+  version: "0.1.0"
+  description: "Nền tảng Multi-Agent: Người bạn đồng hành AI cho sinh viên Học viện Bưu chính Viễn thông. Hệ thống được thiết kế để tạo ra một môi trường học tập năng động. Các tác nhân AI sẽ cùng nhau tương tác để chủ động hỗ trợ sinh viên trong việc tìm kiếm tài liệu, giải quyết bài tập khó, lên kế hoạch ôn thi, và cung cấp lời khuyên hữu ích, cá nhân hóa theo từng nhu cầu của người dùng."
+
+agents:
+  - name: "root_agent"
+    type_agent: "root_agent"
+    type_model: "general_model"
+    goals: "Chuyển giao tác vụ cho tác nhân phù hợp"
+
+  - id: "general_agent"
+    type_agent: "sub_agent"
+    type_model: "general_model"
+    goals: "Giải quyết các tác vụ thông thường và không đòi hỏi xử lý chuyên sâu."
+
+logging:
+  level: "INFO"
+  log_file: "src/config/logging.yaml"

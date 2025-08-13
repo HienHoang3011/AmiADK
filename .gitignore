@@ -1,0 +1,11 @@
+# Thư mục môi trường ảo
+venv/
+.venv/
+
+# Thư mục cache của Python
+__pycache__/
+
+# Tệp chứa biến môi trường
+.env
+
+.pdm-python
